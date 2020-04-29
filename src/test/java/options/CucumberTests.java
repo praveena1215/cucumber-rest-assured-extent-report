@@ -17,7 +17,7 @@ import managers.FileReaderManager;
 		"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/cucumberReport/report.html",
 		"html:target/cucumberReport", "json:target/cucumberReport/cucumber-json-report.json",
 		"junit:target/cucumberReport/cucumber.xml" }, tags = {
-				"@weather,@ResponseAttributes" }, glue = { "stepdefs" }, features = { "src/test/features" })
+				"@weather,@ResponseAttributes,@isbnbook" }, glue = { "stepdefs" }, features = { "src/test/features" })
 public class CucumberTests extends AbstractTestNGCucumberTests {
 	
 	@AfterClass
