@@ -1,5 +1,5 @@
 @weather 
-Feature: Get weather by CITY 
+Feature: Get weather by city 
 Scenario Outline: User calls web service to get weather by its city 
 	Given a weather exists with a city of <cityname> 
 	When a user retrieves the weather by city 

@@ -11,13 +11,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import managers.FileReaderManager;
-
+//@weather,@ResponseAttributes,@isbnbook,@shopping
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty",
 		"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/cucumberReport/report.html",
 		"html:target/cucumberReport", "json:target/cucumberReport/cucumber-json-report.json",
 		"junit:target/cucumberReport/cucumber.xml" }, tags = {
-				"@weather,@ResponseAttributes,@isbnbook" }, glue = { "stepdefs" }, features = { "src/test/features" })
+				"@weather,@ResponseAttributes,@isbnbook,@shopping,@pricelist" }, glue = { "stepdefs" }, features = { "src/test/features" })
 public class CucumberTests extends AbstractTestNGCucumberTests {
 	
 	@AfterClass
